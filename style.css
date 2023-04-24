@@ -1,4 +1,4 @@
-/* Estilos gerais */
+/* Geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,8 +15,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Estilos do cabeçalho */
+/* Cabeçalho */
 header {
+  background-color: #453C38;
+  color: #fff;
+  padding: 10px;
+}
+
+footer {
   background-color: #453C38;
   color: #fff;
   padding: 10px;
@@ -26,7 +32,12 @@ header h1 {
   margin: 0;
 }
 
-/* Estilos do menu */
+.logo img{
+  width: 150px;
+  height: 150px;
+}
+
+/* Menu */
 nav {
   background-color: #4d4d4d;
   color: #fff;
@@ -44,7 +55,7 @@ nav li {
   margin: 0 10px;
 }
 
-/* Estilos do conteúdo */
+/* Conteúdos */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -59,7 +70,7 @@ p {
   line-height: 1.5;
 }
 
-/* Estilos da página inicial */
+/* Página inicial */
 #destaque {
   background-color: #fff;
   padding: 20px;
@@ -82,7 +93,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Estilos da página de atividades */
+/* Atividades */
 .atividades {
   display: flex;
   flex-wrap: wrap;
@@ -114,14 +125,14 @@ p {
   margin-bottom: 20px;
 }
 
-/* Estilos da página de localização */
+/* Localização */
 #mapa {
   width: 100%;
   height: 500px;
   margin-bottom: 20px;
 }
 
-/* Estilos da página de contato */
+/* Contato */
 form {
   background-color: #fff;
   padding: 20px;
@@ -135,7 +146,6 @@ form label {
   margin-bottom: 10px;
 }
 
-form input,
 form textarea {
   width: 100%;
   padding: 10px;
