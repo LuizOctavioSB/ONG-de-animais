@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #0099cc;
+  color: rgb(246, 110, 0);
   text-decoration: none;
 }
 
@@ -17,15 +17,22 @@ a:hover {
 
 /* Cabeçalho */
 header {
+  position: relative;
+  top: 0;
+  width: 100%;
   background-color: #453C38;
   color: #fff;
-  padding: 10px;
+  padding: 0px;
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: #453C38;
   color: #fff;
   padding: 10px;
+  margin: 0;
 }
 
 header h1 {
@@ -52,7 +59,18 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
+}
+
+nav a:hover{
+  margin: 10px;
+  background-color:rgb(56, 56, 56);
+  border-radius: 10px;
+}
+
+.active{
+  border-radius: 10px;
+  background-color:rgb(56, 56, 56);
 }
 
 /* Conteúdos */
@@ -93,7 +111,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Atividades */
+/* Página Atividades */
 .atividades {
   display: flex;
   flex-wrap: wrap;
@@ -125,14 +143,14 @@ p {
   margin-bottom: 20px;
 }
 
-/* Localização */
+/* Página Localização */
 #mapa {
   width: 100%;
   height: 500px;
   margin-bottom: 20px;
 }
 
-/* Contato */
+/* Página Contato */
 form {
   background-color: #fff;
   padding: 20px;
@@ -147,7 +165,7 @@ form label {
 }
 
 form textarea {
-  width: 100%;
+  width: 20%;
   padding: 10px;
   margin-bottom: 20px;
   border: none;
@@ -155,3 +173,7 @@ form textarea {
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.opcao{
+  display: flex;
+  align-items: baseline;
+}
