@@ -2,87 +2,120 @@
 <html lang="pt-br">
 
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Focinho Feliz - Contato</title>
+  <link rel="icon" href="Midias/Logo.png">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html" tittle="Focinho Feliz">
-        <img src="Midias/logo_transparent 1.png" alt="Focinho Feliz">
-      </a>
-    </div>
-    <nav>
-      <ul>
+    <a href="index.html" title="Focinho Feliz" id="logo">
+      <img src="Midias/Logo2.png" alt="Focinho Feliz">
+    </a>
+    <nav id="navHeader">
+      <ul">
         <li><a href="index.html">Home</a></li>
         <li><a href="atividades.html">Atividades</a></li>
         <li><a href="localizacao.html">Localização</a></li>
         <li class="active"><a href="contato.html">Contato</a></li>
-      </ul>
+        </ul>
     </nav>
   </header>
 
-  <main>
+  <div class="main">
     <h1>Entre em contato conosco</h1>
-    <form action="#" method="post">
-      <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-      </div>
-      <div>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div>
-        <label for="assunto">Assunto:</label>
-        <input type="text" id="assunto" name="assunto" required>
-      </div>
-      <div>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-      </div>
-      <div>
-        <label for="interesse">Tenho interesse em ajudar:</label>
-        <div class="opcao">
+    <form action="confirmaContato.html" method="get">
+      <ul id="form" class="inputs">
+        <li id="inputNome">
+          <label for="nome">
+            Nome completo
+            <span class="formRequired">*</span>
+          </label>
+          <input type="text" id="nome" name="nome" required>
+        </li>
+
+        <li class="inputEmail">
+          <label for="email">
+            E-mail
+            <span class="formRequired">*</span>
+          </label>
+          <input type="email" id="email" name="email" required>
+        </li>
+
+        <li class="inputTel">
+          <label for="telefone">
+            Telefone
+          </label>
+          <input type="tel" id="tel" name="tel" maxlength="9">
+        </li>
+
+        <li class="inputAssunto">
+          <label for="assunto">
+            Assunto
+            <span class="formRequired">*</span>
+          </label>
+          <input type="text" id="assunto" name="assunto" required>
+        </li>
+
+        <li class="inputMensagem">
+          <label for="mensagem">
+            Mensagem
+            <span class="formRequired">*</span>
+          </label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+        </li>
+
+        <li class="inputInteresse">
+          <label for="interesse">
+            Tenho interesse em ajudar
+          </label>
+        </li>
+
+        <li class="opcao">
           <input type="checkbox" id="adocao" name="adocao">
           <label for="adocao">Adoção</label>
-        </div>
-        <div class="opcao">
+        </li>
+
+        <li class="opcao">
           <input type="checkbox" id="doacao" name="doacao">
           <label for="doacao">Doação</label>
-        </div>
-        <div class="opcao">
+        </li>
+
+        <li class="opcao">
           <input type="checkbox" id="voluntario" name="voluntario">
           <label for="voluntario">Voluntario</label>
-        </div>
-      </div>
-      <div>
-        <label for="divulgacao">Como nos conheceu?</label>
-        <div class="opcao">
-          <input type="radio" id="google" name="divulgacao" value="google" required>
-          <label for="google">Google</label>
-        </div>
-        <div class="opcao">
+        </li>
+
+        <li>
+          <label for="divulgacao">Como nos conheceu?</label>
+          <div class="opcao">
+            <input type="radio" id="google" name="divulgacao" value="google" required>
+            <label for="google">Google</label>
+        </li>
+
+        <li class="opcao">
           <input type="radio" id="redes-sociais" name="divulgacao" value="redes-sociais" required>
           <label for="redes-sociais">Redes Sociais</label>
-        </div>
-        <div class="opcao">
+        </li>
+
+        <li class="opcao">
           <input type="radio" id="amigos" name="divulgacao" value="amigos" required>
           <label for="amigos">Amigos</label>
-        </div>
-      </div>
-      <div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-      </div>
+        </li>
+
+        <li>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </li>
+      </ul>
     </form>
-  </main>
+  </div>
 
   <footer>
-    <div class="footer-info">
+    <div>
       <p>Focinho Feliz &copy; 2023</p>
       <ul>
         <li><a href="index.html">Página Principal</a></li>
@@ -90,9 +123,10 @@
         <li><a href="contato.html">Contato</a></li>
         <li><a href="localizacao.html">Localização</a></li>
       </ul>
-      <p>Rua das Éricas, 31 - Cidade Jardim - Monte Carmelo / MG
-        <br>(17) 4002-8922
+      <p>Rua das Éricas, 31 - Cidade Jardim <br>Monte Carmelo - MG
+        <br>Contato: 4002-8922
       </p>
+    </div>
   </footer>
 </body>
 
