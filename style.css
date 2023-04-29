@@ -231,17 +231,36 @@ form textarea {
   /* Estilo para mobile */
   header {
     height: auto;
+    width: auto;
     padding: 20px 2%;
   }
 
+  header #navHeader{
+    position: absolute;
+    display: block;
+  }
+
+  a#logo{
+    width: auto;
+  }
+
+  #navheader ul{
+    width: 70%;
+    font-size: 70%;
+  }
+
   #logo img {
+    width: 60%;
     height: 50px;
     margin-right: 0;
   }
 
+  img.pet{
+    width: 80%;
+    height: 80%;
+  }
+
   nav {
-    display: none;
-    position: fixed;
     top: 75px;
     left: 0;
     right: 0;
@@ -249,9 +268,14 @@ form textarea {
     padding: 20px 2%;
   }
 
+  footer{
+    background-color: rgb(63, 184, 175);
+    padding: 20px 2%;
+  }
+
   nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
 
   nav li {
@@ -259,7 +283,7 @@ form textarea {
   }
 
   nav a {
-    font-size: 24px;
+    font-size: 70%;
   }
 
   .active {
@@ -285,6 +309,40 @@ form textarea {
 
   .pet {
     height: 300px;
+  }
+
+  .mobile{
+    margin-top: 100px;
+  }
+
+  #atividades{
+    margin-top: 100px;
+  }
+
+  #atividades p, li{
+    text-align: left;
+  }
+
+  .imgMobile{
+    width: 80%;
+    height: 80%;
+  }
+
+  #atividades img{
+    width: 80%;
+    height: 80%;
+  }
+
+  input#nome, #email, #telefone, #assunto, #mensagem{
+    width: 80%;
+  }
+
+  form{
+    padding: 5px;
+  }
+
+  form ul{
+    padding: 0;
   }
 }
 
