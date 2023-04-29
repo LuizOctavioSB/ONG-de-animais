@@ -25,85 +25,89 @@
     </nav>
   </header>
 
-  <div class="main">
+  <main>
     <h1>Entre em contato conosco</h1>
     <form action="confirmaContato.html" method="get">
       <ul id="form" class="inputs">
-        <li id="inputNome">
+        <li class="intext">
           <label for="nome">
-            Nome completo
+            <b>Nome completo</b>
             <span class="formRequired">*</span>
           </label>
           <input type="text" id="nome" name="nome" required>
         </li>
 
-        <li class="inputEmail">
+        <li class="intext">
           <label for="email">
-            E-mail
+            <b>E-mail</b>
             <span class="formRequired">*</span>
           </label>
           <input type="email" id="email" name="email" required>
         </li>
 
-        <li class="inputTel">
+        <li class="intext">
           <label for="telefone">
-            Telefone
+            <b>Telefone</b>
           </label>
-          <input type="tel" id="tel" name="tel" maxlength="11">
+          <input type="tel" id="telefone" name="tel" maxlength="11">
         </li>
 
-        <li class="inputAssunto">
+        <li class="intext">
           <label for="assunto">
-            Assunto
+            <b>Assunto</b>
             <span class="formRequired">*</span>
           </label>
-          <input type="text" id="assunto" name="assunto" required>
+          <input type="text" id="assunto" name="assu" required>
         </li>
 
-        <li class="inputMensagem">
+        <li class="intext">
           <label for="mensagem">
-            Mensagem
+            <b>Mensagem</b>
             <span class="formRequired">*</span>
           </label>
-          <textarea id="mensagem" name="mensagem" required></textarea>
+          <textarea id="mensagem" name="msg" required></textarea>
         </li>
 
-        <li class="inputInteresse">
-          <label for="interesse">
-            Tenho interesse em ajudar
+        <li class="opcao">
+          <label>
+            <b>Demonstre interesse </b>
           </label>
         </li>
 
         <li class="opcao">
-          <input type="checkbox" id="adocao" name="adocao">
+          <input type="checkbox" id="adocao" name="adota">
           <label for="adocao">Adoção</label>
         </li>
 
         <li class="opcao">
-          <input type="checkbox" id="doacao" name="doacao">
+          <input type="checkbox" id="doacao" name="doa">
           <label for="doacao">Doação</label>
         </li>
 
         <li class="opcao">
-          <input type="checkbox" id="voluntario" name="voluntario">
+          <input type="checkbox" id="voluntario" name="volunt">
           <label for="voluntario">Voluntario</label>
         </li>
 
-        <li>
-          <label for="divulgacao">Como nos conheceu?</label>
-          <div class="opcao">
-            <input type="radio" id="google" name="divulgacao" value="google" required>
-            <label for="google">Google</label>
+        <li class="opcao">
+          <label>
+            <b>Como nos conheceu?</b>
+          </label>
         </li>
 
         <li class="opcao">
-          <input type="radio" id="redes-sociais" name="divulgacao" value="redes-sociais" required>
-          <label for="redes-sociais">Redes Sociais</label>
+          <input type="radio" id="google" name="divulga" value="gg" required>
+          <label for="google">Google</label>
         </li>
 
         <li class="opcao">
-          <input type="radio" id="amigos" name="divulgacao" value="amigos" required>
-          <label for="amigos">Amigos</label>
+          <input type="radio" id="Redes" name="divulga" value="divulgacao" required>
+          <label for="Redes">Redes Sociais</label>
+        </li>
+
+        <li class="opcao">
+          <input type="radio" id="Amigos" name="divulga" value="divulgacon" required>
+          <label for="Amigos">Amigos</label>
         </li>
 
         <li>
@@ -111,8 +115,9 @@
           <input type="reset" value="Limpar">
         </li>
       </ul>
+
     </form>
-  </div>
+  </main>
 
   <footer>
     <div id="divFooter">
@@ -120,6 +125,8 @@
         <li>Rua das Éricas, 31, Cidade Jardim, Monte Carmelo-MG</li>
         <li>Contato: 4002-8922</li>
       </ul>
+    </div>
+    <div>
       <ul class="listaLista">
         <li><a href="index.html">Página Principal</a></li>
         <li><a href="atividades.html">Atividades</a></li>
@@ -127,7 +134,7 @@
         <li><a href="localizacao.html">Localização</a></li>
       </ul>
     </div>
-    <p id="pFooter">Focinho Feliz © 2023 </p>
+    <p>Focinho Feliz © 2023 </p>
   </footer>
 </body>
 
