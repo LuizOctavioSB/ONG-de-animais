@@ -73,6 +73,7 @@ header {
 }
 
 #logo img {
+  margin-top: 3%;
   margin-left: 5%;
 }
 
@@ -250,6 +251,7 @@ form textarea {
   }
 
   #logo img {
+    margin-top: 0%;
     width: 60%;
     height: 50px;
     margin-right: 0;
